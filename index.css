@@ -1,0 +1,300 @@
+:root {
+    --colorNormal: rgb(255, 255, 255);
+    font-size: 1rem;
+}
+
+* {
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:top;
+    box-sizing:border-box;
+    font-family:'Bangers';
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.5em;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+h3 {
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    font-size: 2em;
+    margin-left: 30px;
+}
+
+h4 {
+    text-align: center;
+    font-size: 1em;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+p, h1, h2, h3, h4, li, a {
+    color:var(--colorNormal);
+}
+
+p, h4, li, a {
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+li {
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    margin-left: 30px;
+}
+
+a {
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    text-decoration:none;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+#contenedorTotal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+#menu {
+    width: 20%;
+    margin-left:10vw;
+}
+
+#contenido {
+    margin-right: 10vw;
+    width: 60%;
+    text-align: center;
+}
+
+#zonaModo {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+}
+
+#zonaNombre {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100px;
+    background-color: transparent;
+}
+
+img {
+    display: block;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    position:absolute;
+}
+
+#ajustes {
+    text-align: center;
+    margin-right: 20vw;
+}
+
+/* Codigo CSS del juego de tres en raya (TA-TE-TI) */
+
+#total {
+    border-style: solid;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    )
+    ,url(Imagenes/Prog2.jpg);
+    width: 40%;
+    max-height: 1em;
+    margin-right: 30%;
+    display:flex;
+    flex-direction: column;
+}
+
+#f1 {
+    display: flex;
+    flex-direction: row;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    )
+    ,url(Imagenes/Prog2.jpg);
+}
+
+#c0 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(200, 200, 200, 0.6);
+    border-style: solid;
+    height: 16vh;
+    width: 16vw;
+    margin: 0.5vw;
+    font-size: 7vw;
+}
+
+#c1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(200, 200, 200, 0.6);
+    border-style: solid;
+    height: 16vh;
+    width: 16vw;
+    margin: 0.5vw;
+    font-size: 7vw;
+}
+
+#c2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(200, 200, 200, 0.6);
+    border-style: solid;
+    height: 16vh;
+    width: 16vw;
+    margin: 0.5vw;
+    font-size: 7vw;
+}
+
+#f2 {
+    display: flex;
+    flex-direction: row;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    )
+    ,url(Imagenes/Prog2.jpg);
+}
+
+#c3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(200, 200, 200, 0.6);
+    border-style: solid;
+    height: 16vh;
+    width: 16vw;
+    margin: 0.5vw;
+    font-size: 7vw;
+}
+
+#c4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(200, 200, 200, 0.6);
+    border-style: solid;
+    height: 16vh;
+    width: 16vw;
+    margin: 0.5vw;
+    font-size: 7vw;
+}
+
+#c5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(200, 200, 200, 0.6);
+    border-style: solid;
+    height: 16vh;
+    width: 16vw;
+    margin: 0.5vw;
+    font-size: 7vw;
+}
+
+#f3 {
+    display: flex;
+    flex-direction: row;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    )
+    ,url(Imagenes/Prog2.jpg);
+}
+
+#c6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(200, 200, 200, 0.6);
+    border-style: solid;
+    height: 16vh;
+    width: 16vw;
+    margin: 0.5vw;
+    font-size: 7vw;
+}
+
+#c7 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(200, 200, 200, 0.6);
+    border-style: solid;
+    height: 16vh;
+    width: 16vw;
+    margin: 0.5vw;
+    font-size: 7vw;
+}
+
+#c8 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(200, 200, 200, 0.6);
+    border-style: solid;
+    height: 16vh;
+    width: 16vw;
+    margin: 0.5vw;
+    font-size: 7vw;
+}
+
+/* CODIGO PARA MOSTRAR EL MODAL EN LA PAGINA */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+  
+.modal-content {
+    background-color: #b6b6b6;
+    margin: 10% auto;
+    padding: 5px 30px 30px 30px;
+    border: 10px solid #303030;
+    width: 80%;
+}
+  
+.close {
+    color: #555555;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}

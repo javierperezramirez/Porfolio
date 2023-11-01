@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajustes - JAVIER PÉREZ</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+</head>
+
+<body id="todo">
+    <div id="titulo">
+        <h4>Javier Pérez Ramírez</h4>
+        <h4>CURSO 1-DAW</h4>
+        <h1>AJUSTES</h1>
+        <div id="zonaNombre">
+            <h2 id="actualUsuario"></h2>
+        </div>
+        <div id="zonaModo">
+            <img id="dia" src="Imagenes/BajoBlancoIco.png" onclick="ponerModoDia()" title="Modo Dia">
+            <img id="noche" src="Imagenes/BajoNegroIco.png" onclick="ponerModoNoche()" title="Modo Noche">
+        </div>
+    </div>
+    <br></br>
+    <br></br>
+    <div id="contenedorTotal">
+        <div id="menu">
+            <h3>MENU:</h3>
+            <ol>
+                <li><a href="index.html">Inicio</a></li>
+                <br></br>
+                <li>Ajustes</li>
+                <br></br>
+                <li><a href="javascript7.html">Juego</a></li>
+                <br></br>
+                <li><a href="soldadito.xml">Cancion Soldadito</a></li>
+                <br></br>
+                <li><a href="alcantar.xml">Cancion Al cantar</a></li>
+                <br></br>
+                <li><a href="#" id="modal-link">Ventana Modal</a></li>
+                <div id="modal" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h1>JAVIER PÉREZ RAMÍREZ (1-DAW)</h1>
+                    <p>En el MENU de Ajustes establecemos al presionar "AJUSTAR"
+                        el nombre del usuario, el color y el tamaño de la fuente.
+                        También en la parte superior derecha aparece un botón en
+                        forma de bajo para seleccionar entre un fondo oscuro y
+                        otro claro. Todos estos cambios (salvo el nombre) se
+                        mantendran en localstorage.</p>
+                  </div>
+                </div>
+                <br></br>
+            </ol>
+        </div>
+        <div id="ajustes">
+            <p>Escriba su nombre</p>
+            <input type="text" name="nombreElegido" />
+            <p>Elija un Color</p>
+            <input type="color" name="colorElegido" />
+            <br />
+            <p>Elija la fuente de este documento</p>
+            <select name="tamFuente">
+                <option value="0.8">Pequeña</option>
+                <option value="1.0" selected="select">Mediana</option>
+                <option value="1.4">Grande</option>
+            </select>
+            <button type="button" onclick="aplicarCambios()">APLICAR</button>
+        </div>
+    </div>
+    <script src="./ajustes.js"></script>
+</body>
+
+</html>

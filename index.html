@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - JAVIER PÉREZ</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+</head>
+
+<body id="todo">
+    <div id="titulo">
+        <h4>Javier Pérez Ramírez</h4>
+        <h4>CURSO 1-DAW</h4>
+        <h1>INICIO</h1>
+        <div id="zonaNombre">
+            <h2 id="actualUsuario"></h2>
+        </div>
+    </div>
+    <br></br>
+    <br></br>
+    <div id="contenedorTotal">
+        <div id="menu">
+            <h3>MENU:</h3>
+            <ol>
+                <li>Inicio</li>
+                <br></br>
+                <li><a href="ajustes.html">Ajustes</a></li>
+                <br></br>
+                <li><a href="javascript7.html">Juego</a></li>
+                <br></br>
+                <li><a href="soldadito.xml">Cancion Soldadito</a></li>
+                <br></br>
+                <li><a href="alcantar.xml">Cancion Al Cantar</a></li>
+                <br></br>
+                <li><a href="#" id="modal-link">Ventana Modal</a></li>
+                <div id="modal" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h1>JAVIER PÉREZ RAMÍREZ (1-DAW)</h1>
+                    <p>En el MENU de Ajustes establecemos al presionar "AJUSTAR"
+                        el nombre del usuario, el color y el tamaño de la fuente.
+                        También en la parte superior derecha aparece un botón en
+                        forma de bajo para seleccionar entre un fondo oscuro y
+                        otro claro. Todos estos cambios (salvo el nombre) se
+                        mantendran en localstorage.</p>
+                  </div>
+                </div>
+                <br></br>
+            </ol>
+        </div>
+        <div id="contenido">
+            <p>Bienvenido al trabajo final del tercer trimestre de 1-DAW.</p>
+            <p>A la izquierda aparece un menu desde el cual podemos movernos por las distintas páginas.</p>
+            <p>En el menu de INICIO tenemos una breve descripción del proyecto.</p>
+            <p>En el menu de AJUSTES podemos establecer el color y el tamaño de la fuente de todas las
+            páginas del proyecto. También podemos elegir el fondo de las páginas con un icono de BAJO que
+            aparece en la esquina superior derecha. Los cambios de color/tamaño de fuente y el fondo de 
+            la página se guardarán en "localstorage" por lo que cuando reabramos el navegador aparecera tal
+            y como lo hayamos configurado. En el apartado de NOMBRE estableceremos un nombre de la sesión que
+            será guardado solo mientras dure la navegación en "sessionstorage" y aparecerá en la esquina
+            superior izquierda.</p>
+            <p>En el menu de JUEGO accedemos a un juego de tres en raya (TA-TE-TI).</p>
+            <p>En el menu de CANCION SOLDADITO y CANCION AL CANTAR accedemos a la letra de dos canciones que 
+            se han realizado con XML.</p>
+            <p>En el menu de VENTANA MODAL abrimos una ventana modal realizada en javascript donde viene
+            una breve descripcion del menu de AJUSTES.</p>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
