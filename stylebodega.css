@@ -1,0 +1,425 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: sans-serif;
+}
+:root{
+    --fondo:rgba(0, 70, 0, 0.500);
+    --banh2: 4vw;
+}
+/*______________________________________________ HEADER _________________________________________________*/
+.header{
+    background-image:url(Imagenes/FondoViña2.jpg);
+    height: 1000px;
+    background-size: cover;
+}
+.header__superior{
+    height: 40px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    color:white;
+}
+.header__superior__left{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+}
+.header__superior__right{
+    display: flex;
+    width: 30%;
+}
+.header__superior__iconos{
+    height: 20px;
+    margin: 10px 20px 0 0;
+}
+.header__superior p{
+    display: flex;
+    margin: 15px 1% 0 10%;
+    font-size: 10px;
+    text-align: center;
+}
+.header__cuerpo{
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0),
+        rgba(0,0,0,1)
+    );
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-transform: uppercase;
+    padding:0 0 400px 0;
+}
+.header__cuerpo__logo{
+    width: 10vw;
+    margin:0 0 0 100px;
+}
+.header__cuerpo__menu{
+    display: flex;
+    margin: 40px;
+    gap:100px;
+}
+/*_____________________________________________ H2, a, p ________________________________________________*/
+h2{
+    text-align: center;
+    font-size:var(--banh2);
+    margin-bottom: 3vw;
+}
+a{
+    text-decoration: none;
+    font-size: 1.1vw;
+    color:white;
+}
+a:hover{
+    font-weight: bold;
+}
+p{
+    font-size: 1vw;
+}
+/*__________________________________________ BOTONES:HOVER ______________________________________________*/
+a.ban1eventos__texto__button__rigth:hover{
+    font-weight: bold;
+    background-color: rgb(0, 60, 0);
+    box-shadow: 10px 10px 15px black;
+}
+a.ban1eventos__texto__button__left:hover{
+    font-weight: bold;
+    background-color: rgb(0, 60, 0);
+    box-shadow: -10px 10px 15px black;
+}
+a.ban4bodegas__row__column__div1__button:hover{
+    font-weight: bold;
+    background-color: rgb(0, 60, 0);
+    box-shadow: 0px 10px 15px black;
+}
+a.ban3vinos__texto__button__right:hover{
+    font-weight: bold;
+    background-color: rgb(50, 50, 50);
+    box-shadow: 10px 10px 15px  rgb(100, 100, 100);
+}
+.ban5tienda__texto__button__rigth:hover{
+    font-weight: bold;
+    background-color: rgb(50, 50, 50);
+    box-shadow: 10px 10px 15px  rgb(100, 100, 100);
+}
+/*____________________________________________ BOTONES __________________________________________________*/
+.ban1eventos__texto__button__rigth{
+    background-color: darkgreen;
+    padding:10px;
+    margin:60px auto 10px auto;
+    border-style: solid;
+    border-radius: 10px;
+    font-size: 1vw;
+    text-align: center;
+    width: 10vw;
+    text-transform: uppercase;
+    box-shadow: 15px 15px 15px black;
+}
+.ban1eventos__texto__button__left{
+    background-color: darkgreen;
+    padding:10px;
+    margin:60px auto 10px auto;
+    border-style: solid;
+    border-radius: 10px;
+    font-size: 1vw;
+    text-align: center;
+    width: 10vw;
+    text-transform: uppercase;
+    box-shadow: -15px 15px 15px black;
+}
+.ban4bodegas__row__column__div1__button{
+    background-color: darkgreen;
+    padding:10px;
+    margin:auto auto 50px auto;
+    border-style: solid;
+    border-radius: 10px;
+    font-size: 1vw;
+    text-align: center;
+    width: 10vw;
+    text-transform: uppercase;
+    box-shadow: 0px 15px 15px black;
+}
+.ban3vinos__texto__button__right{
+    background-color: rgb(80, 80, 80);
+    padding:10px;
+    margin:60px auto 50px auto;
+    border-style: solid;
+    border-radius: 10px;
+    font-size: 1vw;
+    text-align: center;
+    width: 10vw;
+    text-transform: uppercase;
+    box-shadow: 15px 15px 15px rgb(100, 100, 100);
+}
+.ban5tienda__texto__button__rigth{
+    background-color: rgb(80, 80, 80);
+    padding:10px;
+    margin:60px auto 50px auto;
+    border-style: solid;
+    border-radius: 10px;
+    font-size: 1vw;
+    text-align: center;
+    width: 10vw;
+    text-transform: uppercase;
+    box-shadow: 15px 15px 15px rgb(100, 100, 100);
+}
+/*___________________________________________ BANNER 1 - EVENTOS ________________________________________*/
+.ban1eventos{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    height: 800px;
+}
+.ban1eventos__texto{
+    text-align: center;
+    margin: auto 5% auto 0;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    line-height: 2.5em;
+}
+.ban1eventos__imagen{
+    padding: 0 0 0 10%;
+    margin:auto 0 auto 0;
+}
+.ban1eventos__imagen__img1{
+    width: 45vw;
+    box-shadow: -20px 20px 20px black;
+    border-radius: 10px;
+    margin:auto;
+}
+/*_________________________________________ BANNER 2 - NOSOTROS _________________________________________*/
+.ban2nosotros{
+    background-image:linear-gradient(
+        0deg,
+        rgba(255,255,255,0.8),
+        rgba(255,255,255,0.8)
+    ),url(Imagenes/FondoFigma.png);
+    background-size:cover;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    height: 800px;
+}
+.ban2nosotros__texto{
+    text-align: center;
+    margin: auto 0 auto 5%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    line-height: 2.5em;
+}
+.ban2nosotros__imagen{
+    width: 50%;
+    margin: auto 0;
+    margin-right: 5%;
+}
+.ban2nosotros__imagen__img1{
+    width: 40vw;
+    box-shadow: 20px 20px 20px black;
+    border-radius: 10px;
+}
+/*__________________________________________ BANNER 3 - VINOS ___________________________________________*/
+.ban3vinos{
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    height: 800px;
+}
+/*___________________________________________ BANNER 4 - BODEGAS ________________________________________*/
+.ban4bodegas{
+    background-image:linear-gradient(
+        0deg,
+        rgba(255,255,255,0.8),
+        rgba(255,255,255,0.8)
+    ),url(Imagenes/FondoHoja.jpg);
+    background-size: cover;
+    margin: 0 auto;
+    height: 800px;
+    padding:5vw;
+}
+.ban4bodegas__row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.ban4bodegas__row__column{
+    display: flex;
+    flex-direction: column;
+}
+.ban4bodegas__row__column__div1{
+    display: flex;
+    flex-direction: column;
+    background-image: url(Imagenes/Bodega1.jpg);
+    width: 20vw;
+    height: 20vw;
+    background-size:cover;
+    border-radius: 20px;
+    box-shadow: -20px 20px 20px black;
+}
+.ban4bodegas__row__column__div2{
+    display: flex;
+    flex-direction: column;
+    background-image: url(Imagenes/Bodega2.jpg);
+    width: 20vw;
+    height: 20vw;
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 0px 20px 20px black;
+}
+.ban4bodegas__row__column__div3{
+    display: flex;
+    flex-direction: column;
+    background-image: url(Imagenes/Bodega3.jpg);
+    width: 20vw;
+    height: 20vw;
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 20px 20px 20px black;
+}
+.ban4bodegas__row__column__texto{
+    text-align: center;
+    font-size: 1.5vw;
+    margin: 50px auto;
+    color:rgb(0, 0, 0);
+}
+/*___________________________________________ BANNER 5 - TIENDA ________________________________________*/
+.ban5tienda{
+    background-image:linear-gradient(
+        0deg,
+        rgba(255,255,255,0),
+        rgba(255,255,255,0)
+    ),url(Imagenes/Barricas.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    height: 1000px;
+}
+.ban5tienda__imagen{
+    padding: 0 0 0 5%;
+    margin:auto 0 auto 0;
+}
+.ban5tienda__texto{
+    text-align: center;
+    margin:10% 5% 5% 5%;
+    display: flex;
+    flex-direction: column;
+    line-height: 2.5em;
+    color:white;
+}
+.ban5tienda__imagen__img1{
+    width: 45vw;
+    box-shadow: -20px 20px 20px black;
+    border-radius: 10px;
+    margin:auto;
+}
+/*________________________________________ BANNER 6 - EXPERIENCIAS ______________________________________*/
+.ban6experiencias{
+    background-image:linear-gradient(
+        0deg,
+        rgba(255,255,255,0.8),
+        rgba(255,255,255,0.8)
+    ),url(Imagenes/FondoHoja.jpg);
+    background-size:cover;
+    margin: 0 auto;
+    height: 1200px;
+    padding:5vw;
+}
+.ban6experiencias__row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.ban6experiencias__row__column{
+    display: flex;
+    flex-direction: column;
+}
+.ban6experiencias__row__column__div1{
+    display: flex;
+    flex-direction: column;
+    background-image: url(Imagenes/Senderismo.jpg);
+    width: 15vw;
+    height: 15vw;
+    background-size:cover;
+    border-radius: 250px;
+    box-shadow: -20px 20px 20px black;
+    opacity: 0.9;
+}
+.ban6experiencias__row__column__div2{
+    display: flex;
+    flex-direction: column;
+    background-image: url(Imagenes/CataVinos.jpg);
+    width: 15vw;
+    height: 15vw;
+    background-size: cover;
+    border-radius: 250px;
+    box-shadow: -20px 20px 20px black;
+    opacity: 0.9;
+}
+.ban6experiencias__row__column__div3{
+    display: flex;
+    flex-direction: column;
+    background-image: url(Imagenes/Merendola.jpg);
+    width: 15vw;
+    height: 15vw;
+    background-size: cover;
+    border-radius: 250px;
+    box-shadow: 20px 20px 20px black;
+    opacity: 0.9;
+}
+.ban6experiencias__row__column__div4{
+    display: flex;
+    flex-direction: column;
+    background-image: url(Imagenes/Chuletillas.jpg);
+    width: 15vw;
+    height: 15vw;
+    background-size: cover;
+    border-radius: 250px;
+    box-shadow: 20px 20px 20px black;
+    opacity: 0.9;
+}
+.ban6experiencias__row__column__texto{
+    text-align: center;
+    font-size: 1.5vw;
+    margin: 50px auto;
+    color:rgb(0, 0, 0);
+}
+.ban6experiencias__row__column__div1:hover{
+    transform: scale(1.1);
+    opacity: 1;
+    box-shadow: -25px 25px 20px black;
+}
+.ban6experiencias__row__column__div2:hover{
+    transform: scale(1.1);
+    opacity: 1;
+    box-shadow: -25px 25px 20px black;
+}
+.ban6experiencias__row__column__div3:hover{
+    transform: scale(1.1);
+    opacity: 1;
+    box-shadow: 25px 25px 20px black;
+}
+.ban6experiencias__row__column__div4:hover{
+    transform: scale(1.1);
+    opacity: 1;
+    box-shadow: 25px 25px 20px black;
+}
+/*__________________________________________ BANNER 7 - FOOTER ________________________________________*/
+.footer__cuerpo{
+    background-color:black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-transform: uppercase;
+    height: 200px;
+}
+.footer__cuerpo__menu{
+    display: flex;
+    margin: 40px 40px 0 0;
+    gap:100px;
+}
