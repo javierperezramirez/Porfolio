@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+h2 {
+    text-align: center;
+    font-size: 4vw;
+    margin: 0 auto 20px auto;
+}
+
+/*______________________________________________ HEADER _________________________________________________*/
+.principal {
+    display: flex;
+    flex-direction: row;
+    height: 35vw;
+    background-color: #FFE0B8;
+    justify-content: space-between;
+}
+
+.principal__texto {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.principal__texto p {
+    font-size: 6vw;
+    margin: 4vw 0 0 10vw;
+    font-weight: bold;
+}
+
+.principal__texto a {
+    margin: 3vw 0 0 10vw;
+    padding: 1.5vw;
+    background-color: #ff9100;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    width: 10vw;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.principal img {
+    width: 41vw;
+}
+
+/*___________________________________________ BANNER 1 - PRODUCTOS ________________________________________*/
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    justify-items: center;
+}
+
+.productos__contenedor {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    height: 25vw;
+}
+
+.productos__contenedor__imagen {
+    width: 100%;
+    position: relative;
+}
+
+.productos__contenedor__imagen img {
+    width: 15vw;
+}
+
+.productos__contenedor__imagen:hover {
+    .productos__contenedor__imagen__boton {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-image: url(Imagenes/Trending.png);
+        background-size: cover;
+        width: 5.5vw;
+        height: 2vw;
+    }
+
+    .productos__contenedor__imagen__icono {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-image: url(Imagenes/Favourite.png);
+        background-size: cover;
+        width: 2vw;
+        height: 2vw;
+    }
+}
+
+.productos__contenedor__descripcion {
+    margin: 0.5vw 10px 0.5vw 0.5vw;
+    width: 13vw;
+}
+
+.productos__contenedor__precio {
+    margin: 0.5vw 10px 0.5vw 0.5vw;
+}
+
+.productos__contenedor__rating {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 0.5vw 10px 0.5vw 0.5vw;
+}
+
+.productos__contenedor__rating img {
+    width: 1.6vw;
+}
+
+a {
+    font-size: clamp(8px, 1vw, 40px);
+}
+
+p {
+    font-size: clamp(8px, 1vw, 40px);
+}
+
+/*___________________________________________ BANNER 2 - CATEGORIAS ________________________________________*/
+#categorias {
+    margin-top: 100px;
+}
+
+.iconos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    justify-items: center;
+}
+
+.iconos__1 {
+    background-image: url(Iconos/Icono1.png);
+    background-size: cover;
+    height: 20vw;
+    width: 15vw;
+    margin-bottom: 50px;
+}
+
+.iconos__2 {
+    background-image: url(Iconos/Icono2.png);
+    background-size: cover;
+    height: 20vw;
+    width: 19vw;
+    margin-bottom: 50px;
+}
+
+.iconos__3 {
+    background-image: url(Iconos/Icono3.png);
+    background-size: cover;
+    height: 20vw;
+    width: 19vw;
+    margin-bottom: 50px;
+}
+
+.iconos__4 {
+    background-image: url(Iconos/Icono4.png);
+    background-size: cover;
+    height: 20vw;
+    width: 15vw;
+    margin-bottom: 50px;
+}
+
+/*_______________________________________ @MEDIA a 650px _____________________________________*/
+@media only screen and (max-width:650px) {
+    .productos__contenedor {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        height: 160px;
+    }
+
+    .productos__contenedor__imagen {
+        width: 100px;
+        height: 120px;
+        position: relative;
+    }
+
+    .productos__contenedor__imagen img {
+        width: 100px;
+    }
+
+    .productos__contenedor__imagen:hover {
+        .productos__contenedor__imagen__boton {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-image: url(Imagenes/Trending.png);
+            background-size: cover;
+            width: 32px;
+            height: 12px;
+        }
+
+        .productos__contenedor__imagen__icono {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-image: url(Imagenes/Favourite.png);
+            background-size: cover;
+            width: 10px;
+            height: 10px;
+        }
+    }
+
+    .productos__contenedor__descripcion {
+        margin: 5px 10px 3px 3px;
+        width: 90px;
+    }
+
+    .productos__contenedor__precio {
+        margin: 3px;
+    }
+
+    .productos__contenedor__rating {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        margin: 3px;
+    }
+
+    .productos__contenedor__rating img {
+        width: 10px;
+    }
+}
+
+/*___________________________________________ BANNER 1 - PRODUCTOS @media1920 ________________________________________*/
+/*@media only screen and (max-width:1920px){
+    .productos{
+        display: flex;
+        justify-content: space-between;
+    }
+    .productos__contenedor{
+        display: flex;
+        flex-direction: column;
+        margin:20px;
+    }
+    .productos__contenedor__imagen{
+        width: 13vw;
+        height: 14vw;
+        position: relative;
+    }
+    .productos__contenedor__imagen img{
+        width:13vw;
+    }
+    .productos__contenedor__imagen:hover{
+        .productos__contenedor__imagen__boton{
+            position:absolute;
+            top:10px;
+            left: 10px;
+            background-image: url(Imagenes/Trending.png);
+            background-size: cover;
+            width: 5.5vw;
+            height: 2vw;
+        }
+        .productos__contenedor__imagen__icono{
+            position:absolute;
+            top:10px;
+            right: 10px;
+            background-image: url(Imagenes/Favourite.png);
+            background-size: cover;
+            width: 2vw;
+            height: 2vw;
+        }
+    }
+    .productos__contenedor__descripcion{
+        margin:10px 10px 20px 10px;
+        width: 13vw;
+    }
+    .productos__contenedor__precio{
+        margin:10px;
+    }
+    .productos__contenedor__rating{
+        display: flex;
+        flex-direction: row;
+        gap:10px;
+        margin:10px;
+    
+    }
+    a{
+        font-size: 1vw;
+    }
+    p{
+        font-size: 1vw;
+    }
+}
+/*___________________________________________ BANNER 1 - PRODUCTOS @media900________________________________________*/
+/*@media only screen and (max-width:900px){
+    .productos{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .productos__contenedor{
+        display: flex;
+        flex-direction: column;
+        margin:20px;
+    }
+    .productos__contenedor__imagen{
+        width: 20vw;
+        height: 21vw;
+        position: relative;
+    }
+    .productos__contenedor__imagen img{
+        width:20vw;
+    }
+    .productos__contenedor__imagen:hover{
+        .productos__contenedor__imagen__boton{
+            position:absolute;
+            top:10px;
+            left: 10px;
+            background-image: url(Imagenes/Trending.png);
+            background-size: cover;
+            width: 5.5vw;
+            height: 2vw;
+        }
+        .productos__contenedor__imagen__icono{
+            position:absolute;
+            top:10px;
+            right: 10px;
+            background-image: url(Imagenes/Favourite.png);
+            background-size: cover;
+            width: 2vw;
+            height: 2vw;
+        }
+    }
+    .productos__contenedor__descripcion{
+        margin:10px 10px 20px 10px;
+        width: 20vw;
+    }
+    .productos__contenedor__precio{
+        margin:10px;
+    }
+    .productos__contenedor__rating{
+        display: flex;
+        flex-direction: row;
+        gap:10px;
+        margin:10px;
+    
+    }
+    a{
+        font-size: 1.2vw;
+    }
+    p{
+        font-size: 1.2vw;
+    }
+}
+/*___________________________________________ BANNER 1 - PRODUCTOS @media500________________________________________*/
+/*@media only screen and (max-width:500px){
+    .productos{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .productos__contenedor{
+        display: flex;
+        flex-direction: column;
+        margin:25px;
+    }
+    .productos__contenedor__imagen{
+        width: 30vw;
+        height: 31vw;
+        position: relative;
+    }
+    .productos__contenedor__imagen img{
+        width:30vw;
+    }
+    .productos__contenedor__imagen:hover{
+        .productos__contenedor__imagen__boton{
+            position:absolute;
+            top:10px;
+            left: 10px;
+            background-image: url(Imagenes/Trending.png);
+            background-size: cover;
+            width: 5.5vw;
+            height: 2vw;
+        }
+        .productos__contenedor__imagen__icono{
+            position:absolute;
+            top:10px;
+            right: 10px;
+            background-image: url(Imagenes/Favourite.png);
+            background-size: cover;
+            width: 2vw;
+            height: 2vw;
+        }
+    }
+    .productos__contenedor__descripcion{
+        margin:10px 10px 20px 10px;
+        width: 30vw;
+    }
+    .productos__contenedor__precio{
+        margin:10px;
+    }
+    .productos__contenedor__rating{
+        display: flex;
+        flex-direction: row;
+        gap:10px;
+        margin:10px;
+    
+    }
+    a{
+        font-size: 1.5vw;
+    }
+    p{
+        font-size: 1.5vw;
+    }
+}

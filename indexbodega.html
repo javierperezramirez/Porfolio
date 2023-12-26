@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bodega Landing</title>
-    <link rel="stylesheet" href="stylebodega.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -21,11 +23,12 @@
                 <a href="#"><img class="header__superior__iconos" src="Iconos/Social2.png"></a>
                 <a href="#"><img class="header__superior__iconos" src="Iconos/Social3.png"></a>
                 <a href="#"><img class="header__superior__iconos" src="Iconos/Social4.png"></a>
+
             </div>
         </div>
         <div class="header__cuerpo">
             <div>
-                <img class="header__cuerpo__logo" src="Imagenes/LogoUva2.png">
+                <img class="header__cuerpo__logo" src="Imagenes/LogoMaximo.png">
             </div>
             <div class="header__cuerpo__menu">
                 <a href="#ban1eventos">Eventos</a>
@@ -36,11 +39,12 @@
                 <a href="#ban6experiencias">Experiencias</a>
             </div>
         </div>
+
     </header>
     <!------------------------------------------- BANER 1 EVENTOS ----------------------------------------->
     <section id="ban1eventos">
         <div class="ban1eventos">
-            <div class="ban1eventos__imagen">
+            <div data-aos="flip-left" data-aos-easing="linear" data-aos-duration="1500" class="ban1eventos__imagen">
                 <img class="ban1eventos__imagen__img1" src="Imagenes/Eventos.jpg">
             </div>
             <div class="ban1eventos__texto">
@@ -79,10 +83,10 @@
     <!------------------------------------------ BANER 3 VINOS ---------------------------------------->
     <section id="ban3vinos">
         <div class="ban3vinos">
-            <div class="ban1eventos__imagen">
-                <img class="ban1eventos__imagen__img1" src="Imagenes/FondoCopaVino.jpg">
+            <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="3000" class="ban3vinos__imagen">
+                <img class="ban3vinos__imagen__img1" src="Imagenes/FondoCopaVino.jpg">
             </div>
-            <div class="ban1eventos__texto">
+            <div class="ban3vinos__texto">
                 <h2>Vinos</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dicta dolor corrupti id velit nobis
                     repellat, ab architecto qui facere in esse. Minus deserunt distinctio, ratione sequi rerum dolore
@@ -124,7 +128,7 @@
     <section id="ban5tienda">
         <div class="ban5tienda">
             <div class="ban5tienda__imagen">
-                <img class="ban5tienda__imagen__img1" src="">
+                <img class="ban2nosotros__imagen__img1" src="">
             </div>
             <div class="ban5tienda__texto">
                 <h2>Tienda</h2>
@@ -137,7 +141,7 @@
                     Pariatur
                     dolorum qui id deleniti est. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
                     nisi.</p>
-                <a class="ban5tienda__texto__button__rigth" href="#">comprar</a>
+                <a class="ban5tienda__texto__button__right" href="#">comprar</a>
             </div>
         </div>
     </section>
@@ -178,7 +182,7 @@
     <footer>
         <div class="footer__cuerpo">
             <div>
-                <img class="header__cuerpo__logo" src="Imagenes/LogoUva2.png">
+                <img class="footer__cuerpo__logo" src="Imagenes/LogoMaximo.png">
             </div>
             <div class="footer__cuerpo__menu">
                 <a href="#ban1eventos">Eventos</a>
@@ -189,15 +193,40 @@
                 <a href="#ban6experiencias">Experiencias</a>
             </div>
         </div>
-        <div class="header__superior">
-            <p>Horario: L-V (8:00-20:00)</p>
-            <p>Redes Sociales:</p>
-            <a href="#"><img class="header__superior__iconos" src="Iconos/Social1.png"></a>
-            <a href="#"><img class="header__superior__iconos" src="Iconos/Social2.png"></a>
-            <a href="#"><img class="header__superior__iconos" src="Iconos/Social3.png"></a>
-            <a href="#"><img class="header__superior__iconos" src="Iconos/Social4.png"></a>
+        <div class="footer__mitad">
+            <div class="footer__mitad__contenido__left">
+                <p style="text-decoration: underline;">Links</p>
+                <p>Enlace a la bodega asociada</p>
+                <p>Enlace al consejo regulador</p>
+                <p>Enlace al museo del vino</p>
+            </div>
+            <div class="footer__mitad__contenido__middle">
+                <p style="text-decoration:underline">Contactos</p>
+                <p>C/Cuesta LLena de Vino 9, Briones</p>
+                <p>Tlf: 6565654125 / 669854785</p>
+                <p>Email: buenvino@vinomail.com</p>
+                <p>Twiter: twentitwitero</p>
+            </div>
+            <div class="footer__mitad__contenido__right">
+            </div>
+        </div>
+        <div class="footer__inferior">
+            <div class="footer__inferior__left">
+                <p>Horario: L-V (8:00-20:00)</p>
+            </div>
+            <div class="footer__inferior__right">
+                <p>Redes Sociales:</p>
+                <a href="#"><img class="header__superior__iconos" src="Iconos/Social1.png"></a>
+                <a href="#"><img class="header__superior__iconos" src="Iconos/Social2.png"></a>
+                <a href="#"><img class="header__superior__iconos" src="Iconos/Social3.png"></a>
+                <a href="#"><img class="header__superior__iconos" src="Iconos/Social4.png"></a>
+                <a href="#"><img class="prueba__fixed" src="Iconos/whatsapp1.png"></a>
+            </div>
         </div>
     </footer>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

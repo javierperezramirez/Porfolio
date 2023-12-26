@@ -1,0 +1,378 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --naranja:#FF902A;
+    --cafesolo:#2F2105;
+    --cafesombra:#F9D9AA;
+}
+
+h1{
+    font-size: clamp(15px,4vw,65px);
+    margin:0 2vw 2vw 2vw;
+}
+
+h2{
+    font-size: clamp(12px,3vw,62px);
+    margin:2vw 2vw 2vw 2vw;
+}
+
+p{
+    color:gray;
+    margin:2vw;
+    font-size:clamp(7px,1.5vw,40px);
+}
+
+.bottom{
+    margin:2vw;
+    padding: 0.5vw 2vw 0.7vw 2.5vw;
+    background-color: var(--cafesolo);
+    color:white;
+    font-size: 1.5vw;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+.bottom__imagen{
+    width: 2vw;
+    margin-left: 2vw;
+    margin-bottom: -0.5vw;
+}
+
+#cabecera {
+    background-image: url(Imagenes/FondoHead.png);
+    background-size: cover;
+    height: 70vw;
+}
+
+.cabecera__menu {
+    display: flex;
+    flex-direction: row;
+    padding: 1vw 7vw 5vw 7vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecera__menu__texto{
+    text-decoration: none;
+    color: var(--cafesolo);
+    margin: 1vw;
+    font-size: 1.5vw;
+}
+
+.cabecera__menu img{
+    height: 3vw;
+}
+
+.cabecera__menu__final{
+    display: flex;
+    align-items: center;
+}
+
+.cabecera__menu__final__buscador{
+    width: 15vw;
+    height: 5vw !important;
+    margin-top:0px;
+}
+
+.cabecera__menu__final__carro{
+    width: 3vw;
+    height: 3vw;
+}
+
+.cabecera__cuerpo {
+    display: flex;
+    flex-direction: row;
+}
+
+.cabecera__cuerpo__texto{
+    width: 50%;
+    padding:0 5vw 5vw 5vw;
+}
+
+.cabecera__cuerpo__texto__boton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cabecera__cuerpo__imagen {
+    background-image: url(Imagenes/Taza.png);
+    background-size: cover;
+    height: 30vw;
+    width: 41vw;
+}
+
+#popular{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin:-17vw auto 0 auto;
+}
+
+.popular{
+    /* display: grid;
+    grid-template-columns: repeat(3,1fr); */
+    display: flex;
+    flex-direction: row;
+    background-image: url(Imagenes/FondoRectangulo.png);
+    background-size: cover;
+    height: 25vw;
+    justify-content: center;
+}
+
+.popular__elemento{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 1vw;
+    border: 3px solid #F9D9AA;
+    border-radius: 10px;
+    margin: -8vw 1vw 8vw 1vw;
+    align-items: center;
+    justify-content: center;
+    width: 24vw;
+    height: 27vw;
+    box-shadow: 10px 10px 10px gray;
+}
+
+.popular__elemento__descripcion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1vw;
+    gap:2vw;
+}
+
+.popular__elemento__descripcion p{
+    color:var(--cafesolo);
+    margin:1vw 0 0 0;
+}
+
+.popular__elemento__iconos{
+    display: flex;
+    align-items: center;
+    margin:0;
+}
+
+.popular__elemento__iconos2{
+    width: 5vw;
+    height: 2.5vw;
+    margin:0.4vw 0 0 0.4vw;
+}
+
+.popular__elemento__iconos3{
+    width: 2.5vw;
+    height: 2.5vw;
+    margin: 0 0 0 5vw;
+}
+
+.popular__elemento__iconos p{
+    font-size:clamp(5px,1vw,40px);
+    margin:0;
+}
+
+.popular__elemento__imagen{
+    position:relative;
+}
+
+.popular__imagen{
+    width: 20vw;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.popular__rating{
+    position:absolute;
+    top: 1vw;
+    left: 1vw;
+    width: 3.5vw;
+    z-index: 2;
+}
+
+#delivery{
+    width: 90%;
+    margin:5vw;
+}
+
+.delivery{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.delivery__elemento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:2vw 1vw;
+    width: 25%;
+}
+
+.delivery__elemento p{
+    color:var(--cafesolo);
+    font-size: 1.4vw;
+    margin:1vw;
+}
+
+.delivery__elemento img{
+    width: 15vw;
+}
+
+#about{
+    background-image: url(Imagenes/FondoBanner3.png);
+    background-size: cover;
+    margin:10vw 0;
+}
+
+.about{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.about__elemento__imagen{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.about__elemento__texto{
+    display: flex;
+    flex-direction: column;
+    margin:2vw 5vw;
+    width: 40%;
+    text-align: left;
+}
+
+.about__elemento__imagen img{
+    width:35vw;
+    border: 3px solid #F9D9AA;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px gray;
+    margin: -5vw 0 5vw 0;
+}
+
+.about__boton{
+    margin:2vw;
+    width: 17vw;
+    padding: 0.5vw 2vw 0.7vw 2.5vw;
+    background-color: var(--cafesolo);
+    color:var(--naranja);
+    font-size: 1.5vw;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+#menu{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu__fila{
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); */
+    display: flex; /*Hay que borrarlo si utilizamos el GRID*/
+    height: 25vw; /*Hay que borrarlo si utilizamos el GRID*/ 
+    justify-items: center;
+    justify-content: center;
+    margin-bottom: 3vw;
+    gap:1vw;
+}
+
+.menu__fila__elemento{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 1vw;
+    border-radius: 10px;
+    align-items: center;
+    width: 25vw;
+    box-shadow: 10px 10px 10px gray;
+}
+
+#personajes{
+    background-image: url(Imagenes/FondoRectangulo2.png);
+    background-size: cover;
+    height: 30vw;
+    margin:10vw 40vw 10vw 0;
+    display: flex;
+}
+
+.personajes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin:5vw -40vw 5vw 5vw;
+    justify-content:space-between;
+}
+
+.personajes__texto{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+
+.personajes__imagen{
+    margin-left: 6.5vw;
+    width: 15vw;
+    height: 15vw;
+}
+
+#footer{
+    background-image: url(Imagenes/FooterFondo.png);
+    background-size: cover;
+    margin: 9vw;
+    height: 26.9vw;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-content:center;
+}
+
+.footer__texto{
+    display: flex;
+    justify-content: center;
+    margin-top:9vw
+}
+
+.footer__texto h2{
+    text-align: center;
+    font-size: 2.5vw;
+    color:white;
+    margin:0;
+}
+
+.footer__imagen{
+    display: flex;
+    justify-content: center;
+}
+
+.footer__imagen img{
+    width: 33vw;
+}
+
+/*------------------------------------------- MEDIA QUERY a 450px -------------------------------------------------*/
+/* @media only screen and (max-width:450px){
+    .menu__fila{
+        display: grid;
+        grid-template-columns: repeat(40%,40%); */
+        /*display: flex; Hay que borrarlo si utilizamos el GRID*/
+        /*height: 25vw; Hay que borrarlo si utilizamos el GRID*/ 
+        /* justify-items: center;
+        justify-content: center;
+        margin-bottom: 3vw;
+        gap:1vw; */
+    /* }
+} */
