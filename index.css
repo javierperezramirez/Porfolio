@@ -118,7 +118,7 @@ img {
     ,url(Imagenes/Prog2.jpg);
     width: 40%;
     max-height: 1em;
-    margin-right: 30%;
+    margin: 0 auto;
     display:flex;
     flex-direction: column;
 }
@@ -140,7 +140,7 @@ img {
     justify-content: center;
     background-color: rgba(200, 200, 200, 0.6);
     border-style: solid;
-    height: 16vh;
+    height: 12vw;
     width: 16vw;
     margin: 0.5vw;
     font-size: 7vw;
@@ -152,7 +152,7 @@ img {
     justify-content: center;
     background-color: rgb(200, 200, 200, 0.6);
     border-style: solid;
-    height: 16vh;
+    height: 12vw;
     width: 16vw;
     margin: 0.5vw;
     font-size: 7vw;
@@ -164,7 +164,7 @@ img {
     justify-content: center;
     background-color: rgb(200, 200, 200, 0.6);
     border-style: solid;
-    height: 16vh;
+    height: 12vw;
     width: 16vw;
     margin: 0.5vw;
     font-size: 7vw;
@@ -187,7 +187,7 @@ img {
     justify-content: center;
     background-color: rgb(200, 200, 200, 0.6);
     border-style: solid;
-    height: 16vh;
+    height: 12vw;
     width: 16vw;
     margin: 0.5vw;
     font-size: 7vw;
@@ -199,7 +199,7 @@ img {
     justify-content: center;
     background-color: rgb(200, 200, 200, 0.6);
     border-style: solid;
-    height: 16vh;
+    height: 12vw;
     width: 16vw;
     margin: 0.5vw;
     font-size: 7vw;
@@ -211,7 +211,7 @@ img {
     justify-content: center;
     background-color: rgb(200, 200, 200, 0.6);
     border-style: solid;
-    height: 16vh;
+    height: 12vw;
     width: 16vw;
     margin: 0.5vw;
     font-size: 7vw;
@@ -234,7 +234,7 @@ img {
     justify-content: center;
     background-color: rgb(200, 200, 200, 0.6);
     border-style: solid;
-    height: 16vh;
+    height: 12vw;
     width: 16vw;
     margin: 0.5vw;
     font-size: 7vw;
@@ -246,7 +246,7 @@ img {
     justify-content: center;
     background-color: rgb(200, 200, 200, 0.6);
     border-style: solid;
-    height: 16vh;
+    height: 12vw;
     width: 16vw;
     margin: 0.5vw;
     font-size: 7vw;
@@ -258,7 +258,7 @@ img {
     justify-content: center;
     background-color: rgb(200, 200, 200, 0.6);
     border-style: solid;
-    height: 16vh;
+    height: 12vw;
     width: 16vw;
     margin: 0.5vw;
     font-size: 7vw;
